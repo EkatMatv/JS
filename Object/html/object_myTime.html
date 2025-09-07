@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Время</title>
+    <link rel="stylesheet" href="../css/object_myTime.css">
+</head>
+<body>
+    <div class="container">        
+        <div id="countdown">      
+            
+            <p id="countdown-item"><span id="hours"></span><span> :</span>
+            <span id="minutes"></span><span> :</span>
+            <span id="seconds"></span></p>            
+        </div>
+        <form id="myForm">
+        <fieldset>
+            <legend>Мое время</legend> 
+            <label for = "hours1">Введите ваше время:</label><br>          
+            <input id="hours1" placeholder="часы">
+            <input id="minutes1" placeholder="минуты">
+            <input id="seconds1" placeholder="секунды"><br>
+
+            <input id="btn" type="button" value="OK"><br>
+            <label for="output">Вы ввели время:</label><br>
+            <output id="output"></output><br>
+            <label for = "inputHours">Изменить время:</label><br>
+            
+            <input id="inputHours" placeholder="часы">
+            
+            <input id="inputMinutes" placeholder="минуты">
+            
+            <input id="inputSeconds" placeholder="секунды"><br>
+            <input id="btn2" type="button" value="OK"><br>
+            <label for="newTime">Измененное время:</label><br>
+            <output id="newTime"></output>
+            <input id="btn3" type="button" value="Очистить"><br>
+            
+        </fieldset>
+        </form>
+    </div>
+    <nav id="nav">
+        <a href="object_myFraction.html"> << Назад</a>
+        <a> | Вперед >></a>
+    </nav>
+        <script src="../js/object_myTime.js"></script> 
+</body>
+</html>

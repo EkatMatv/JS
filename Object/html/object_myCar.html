@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобиль</title>
+    
+    <link rel="stylesheet" href="../css/object_myCar.css">
+</head>
+<body>
+<div class="container">
+<form id="myForm">
+<fieldset>
+    <legend>Автомобиль</legend>
+    <label for="myCar">Выберите автомобиль:</label><br>
+    <select name ="myCar" id="myCar" size="5">
+        <optgroup label="Toyota">
+            <option id="corolla" value="Corolla">Corolla</option>
+            <option value="Camry">Camry</option>
+            <option value="RAV4">RAV4</option>
+            <option value="Land Cruiser">Land Cruiser</option>
+        </optgroup>
+        <optgroup label="Mazda">
+            <option value="Mazda2">Mazda2</option>
+            <option value="Mazda6">Mazda6</option>
+            <option value="CX-5">CX-5</option>
+        </optgroup>
+        <optgroup label="Honda">
+            <option value="Accord">Accord</option>
+            <option value ="Ballade">Ballade</option>
+        </optgroup>    
+        <optgroup label="Nissan">
+            <option value="X-Trail">X-Trail</option>
+            <option value="Qashqai">Qashqai</option>
+            <option value="Pathfinder">Pathfinder</option>
+        </optgroup>
+    </select><br> 
+    <input id="btn" type="button" value="OK"><br>
+    <label for="output">Информация:</label><br>
+    <output id="output"></output>
+    <label for="distance">Введите расстояние, которое должен преодолеть автомобиль (км):</label><br>
+    <input id="distance" type="text" placeholder="расстояние в км"><br>
+    <input id="btnTime" type="button" value="Рассчитать"><br>
+    <label for="outputTime">Затраченное время:</label><br>
+    <output id="outputTime"></output>
+    <input id="clear" type="reset" value="Очистить"><br>
+</fieldset>
+</form>
+</div>
+<nav id="nav">
+    <a href="../start_object.html"><< Назад |</a>
+    <a href="object_myFraction.html">Вперед >></a>
+</nav>
+<script src="../js/object_myCar.js"></script>        
+       
+</body>
+</html>

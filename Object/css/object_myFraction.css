@@ -1,0 +1,73 @@
+.container{
+    display: block;    
+    margin: auto;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;      
+}
+#nav{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;   
+}
+fieldset{
+    position: relative;
+    bottom: 5px;
+    background-color: aliceblue;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+input[type="button"], input[type="reset"]{   
+    border: 1px solid black ;
+    border-radius: 5px;
+    width: 109px;
+    height: 25px;
+    margin: 10px 0 5px 0;    
+    background-color: rgb(165, 165, 220);    
+}
+#operationFraction{
+    display: block;
+    width: 450px;
+    height: 150px;
+    background-color:white;
+    margin: 10px 0 5px 0;
+}
+#output, #output1{
+    display: block;
+    width: 200px;
+    height: 30px;
+    background-color:white;
+    margin: 10px 0 0 0;
+    
+}
+input {
+    
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+#firstFraction{
+    grid-column: 1;
+    grid-row: 1;
+}
+#secondFraction{
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+.integer{
+    font-size:14px;
+    font-weight: normal;
+    margin-right: -5px;
+}

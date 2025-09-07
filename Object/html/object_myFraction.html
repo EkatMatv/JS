@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/object_myFraction.css">
+    <title>Дроби</title>
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+        <fieldset>            
+            <legend>Операции с дробями</legend>
+            <div id="container1">
+                <div id = "firstFraction">
+                    <label for="numerator">Первая дробь:</label><br>
+                    <input id="numerator" type="text" placeholder="числитель">            
+                    <input id="denominator" type="text" placeholder="знаменатель"><br>
+                    <input id="btn" type="button" value="OK"><br>
+                    <label for="output">Ваша дробь:</label><br>
+                    <output id="output"></output><br>
+                </div>
+                <div id = "secondFraction">
+                    <label for="numerator1">Вторая дробь:</label><br>
+                    <input id="numerator1" type="text" placeholder="числитель">            
+                    <input id="denominator1" type="text" placeholder="знаменатель"><br>
+                    <input id="btn1" type="button" value="OK"><br>
+                    <label for="output1">Ваша дробь:</label><br>
+                    <output id="output1"></output><br>
+                </div>
+            </div>
+            <input id="btn2" type="button" value="Вычислить"><br>
+            <label for="operationFraction">Операции с дробями:</label><br>
+            <output id="operationFraction"></output>
+            <input id="clear" type="reset" value="Очистить"><br>
+        </fieldset>
+        </form>
+    </div>
+<nav id="nav">
+    <a href="object_myCar.html"><< Назад |</a>
+    <a href="object_myTime.html">Вперед >></a>
+</nav>
+<script src="../js/object_myFraction.js"></script>         
+</body>
+</html>
