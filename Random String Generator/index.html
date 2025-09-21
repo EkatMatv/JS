@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор случайных строк</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор случайных строк</h1>
+        
+        <div class="form-group">
+            <label for="length">Длина строки:</label>
+            <input type="number" id="length" min="1" max="1000" value="12" required>
+            <div id="length-error" class="error">Длина должна быть от 1 до 1000 символов</div>
+        </div>
+        
+        <div class="form-group">
+            <label>Использовать символы:</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="digits" checked>
+                    <label for="digits">Цифры (0-9)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="uppercase" checked>
+                    <label for="uppercase">Заглавные латинские буквы (A-Z)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="lowercase" checked>
+                    <label for="lowercase">Строчные латинские буквы (a-z)</label>
+                </div>
+            </div>
+            <div id="chars-error" class="error">Выберите хотя бы один тип символов</div>
+        </div>
+        
+        <button onclick="generateString()">Generate</button>
+        
+        <div class="result">
+            <label class="result-label">Результат:</label>
+            <div id="result" class="result-field">Здесь появится сгенерированная строка</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
