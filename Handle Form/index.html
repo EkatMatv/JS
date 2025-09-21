@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Логин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Форма входа</h2>
+
+        <form class="form" onsubmit="return handleForm()">
+            <label for="login">Логин:</label>
+            <input type="text" id="login" required>
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" required>
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="remember">
+                <label for="remember" style="font-weight: normal;">Запомнить меня</label>
+            </div>
+            
+            <button type="submit">Войти</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
