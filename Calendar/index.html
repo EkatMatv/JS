@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Календарь</h1>
+        
+        <div class="form-group">
+            <select id="month" required>
+                <option value="">Выберите месяц</option>
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+            
+            <input type="number" id="year" placeholder="Год" min="1900" max="2100" required>
+            
+            <button onclick="generateCalendar()">Показать календарь</button>
+        </div>
+
+        <div id="error-message" class="error"></div>
+        
+        <div id="calendar" class="calendar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
