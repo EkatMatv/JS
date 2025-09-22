@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Числовой ввод</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Числовой ввод</h2>
+    
+    <div class="counter">
+        <input type="number" id="numberInput" class="number-input" value="0" readonly>
+        <div class="buttons-container">
+            <button class="btn btn-up" onclick="changeValue(1)">▲</button>
+            <button class="btn btn-down" onclick="changeValue(-1)">▼</button>
+        </div>
+    </div>
+    
+    <p>Используйте кнопки или стрелки ↑↓</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
