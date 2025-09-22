@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    min-width: 100px;
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 87px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(156, 154, 154);
+    transition: width 0.3s ease;
+    color: white;
+    z-index: 1000;
+}
+.container.expanded {
+    width: 236px;
+}
+.menu-header {
+    padding: 30px 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.menu-header h4 {
+    font-weight: normal;
+    white-space: nowrap;
+}
+.menu-icon {
+    font-size: 34px;
+}
+main {
+    padding: 30px 30px 0 160px;
+    height: 100%;
+    background-color: rgb(228, 226, 226);
+    min-height: 100vh;
+}
+h1 {
+    padding: 30px 0;
+}
+.list-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    background-color: rgb(156, 154, 154);
+    gap: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.list-1:hover {
+    background-color: #5e5e5e;
+}
+
+.list-1 img {
+    width: 45px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.list-1 span {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+.container.expanded .list-1 span {
+    opacity: 1;
+
+}
+
+.content {
+    margin-left: 100px;
+    padding: 20px;
+}

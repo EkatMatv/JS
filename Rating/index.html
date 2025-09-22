@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звёздный рейтинг</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Звёздный рейтинг</h1>
+        
+        <div class="stars" id="stars-container">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        
+        <div class="rating-text" id="rating-text">
+            Оцените от 1 до 5 звёзд
+        </div>
+        
+        <div class="instructions">
+            <h3>Управление:</h3>
+            <ul>
+                <li>Кликните по звезде мышкой</li>
+                <li>Цифры <span class="key">1</span>-<span class="key">5</span> на клавиатуре</li>
+                <li>Стрелки <span class="key">↑</span> и <span class="key">↓</span> для изменения</li>
+                <li><span class="key">0</span> для сброса рейтинга</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side menu page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="sidebar">
+        <div class="menu-header" onclick="toggleMenu()">
+            <div class="menu-icon">≡</div>
+            <h4>Menu</h4>
+        </div>
+        
+        <div class="list-1">
+            <img src="Image/edit.png" alt="edit">
+            <span>EDIT</span>
+        </div>
+        <div class="list-1">        
+            <img src="Image/favorites.png" alt="favorites">
+            <span>FAVORITES</span>
+        </div>
+        <div class="list-1">
+            <img src="Image/history.png" alt="history">
+            <span>HISTORY</span>
+        </div>
+        <div class="list-1">
+            <img src="Image/security.png"alt="security">
+            <span>SECURITY</span>
+        </div>
+        <div class="list-1">
+            <img src="Image/settings.png" alt="settings">
+            <span>SETTINGS</span>
+        </div>
+    </div>
+    
+    <main>
+        <div class="content">
+            <h1>Основное содержимое</h1>
+            <p>Нажмите на "MENU" чтобы развернуть/свернуть боковое меню</p>
+            <p>Или нажмите ESC на клавиатуре для сворачивания</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
