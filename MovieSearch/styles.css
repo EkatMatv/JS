@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+h2 {
+    text-align: center;
+}
+.container {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 350px;
+    height: 230px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 0 20px 10px 20px;
+    background-color: rgb(251, 242, 233);
+}
+#searchForm {
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+
+    margin: 0 auto;
+}
+
+.field {
+    clear: both;
+    text-align: right;
+    margin: 10px 0 20px 0;
+
+}
+#movieTitle {
+    width: 200px;
+    height: 20px;
+}
+#movieType {
+    width: 200px;
+    height: 25px;
+}
+label {
+    float: left;
+
+}
+#results {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.movie {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.movie img {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+}
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.pagination button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.error {
+    color: red;
+}
+.details {    
+    display: flex;
+    flex-direction: row;    
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+    width: 800px;
+    height: 380px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.details img {
+    width: 300px;
+    height: 360px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#PoiskBtn {
+    margin-bottom: 5px;    
+    width: 327px;
+    height: 25px;
+    cursor: pointer;
+}
+#detaileBtn{
+    width: 250px;
+    height: 25px;
+    cursor: pointer;
+}
