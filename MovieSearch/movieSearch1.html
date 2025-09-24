@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Поиск фильмов</title>
+    <link rel="stylesheet" href="movieSearch.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Поиск фильмов</h2>
+        <form id="searchForm">
+            <div class="field">
+                <label for="movieTitle">Фильм:</label>
+                <input type="text" id="movieTitle" placeholder="Введите название фильма" required><br>
+            </div>
+            <div class="field">
+
+                <label for="movieType">Жанр:</label>
+                <select id="movieType">
+                    <option value="movie">Фильм</option>
+                    <option value="series">Сериал</option>
+                    <option value="episode">Эпизод</option>
+                </select><br>
+            </div>
+            <button id="PoiskBtn" type="submit">Поиск</button>
+        </form>
+    </div>
+    <div id="results"></div>
+    <div class="pagination"></div>
+    <div id="details"></div>
+    <script src="movieSearch.js"></script>     
+</body>
+
+</html>
